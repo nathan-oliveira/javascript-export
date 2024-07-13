@@ -1,0 +1,3 @@
+nycrc serve para deixar codigo 100% coberto de testes
+
+(end to end - e2e)

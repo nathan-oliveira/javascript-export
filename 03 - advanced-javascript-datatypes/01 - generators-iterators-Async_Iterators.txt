@@ -1,0 +1,3 @@
+Generators: É fazer que as funções virem lista e que entregue os dados sobre demanda
+Iterators: Validar a quantidade de vezes que uma função recursiva é chamada
+Async Iterators

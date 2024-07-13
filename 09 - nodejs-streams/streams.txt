@@ -1,0 +1,6 @@
+streams é uma comunicação continua
+
+read streams -> leitura dos dados
+transform streams -> usando para conversão dos dados
+writeble streams -> final da conversão
+

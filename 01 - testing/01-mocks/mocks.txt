@@ -1,0 +1,2 @@
+mocks serve para não replicar os testes, são usado em testes unitário para criar objetos que parte do principio que o teste A esteja funionando, 
+guardando o resultado dele em um objeto fixo para que consiga testar de B á C sem depender do A

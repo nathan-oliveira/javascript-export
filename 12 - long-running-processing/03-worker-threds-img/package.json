@@ -1,0 +1,11 @@
+{
+  "name": "03-worker-threds-img",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "type": "module",
+  "dependencies": {
+    "axios": "^1.7.2",
+    "sharp": "^0.33.4"
+  }
+}

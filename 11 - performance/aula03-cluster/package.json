@@ -1,0 +1,13 @@
+{
+  "name": "aula03-cluster",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "type": "module",
+  "devDependencies": {
+    "autocannon": "^7.15.0"
+  },
+  "scripts": {
+    "test": "npx autocannon -c 100 -d 30 -p 10 http://localhost:3000",
+  }
+}

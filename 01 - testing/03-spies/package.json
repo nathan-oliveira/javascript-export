@@ -1,0 +1,25 @@
+{
+  "name": "03-spies",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "sinon": "^17.0.1"
+  },
+  "dependencies": {
+    "diff": "^5.2.0",
+    "has-flag": "^4.0.0",
+    "just-extend": "^6.2.0",
+    "lodash.get": "^4.4.2",
+    "nise": "^5.1.9",
+    "path-to-regexp": "^6.2.2",
+    "supports-color": "^7.2.0",
+    "type-detect": "^4.0.8"
+  },
+  "description": ""
+}

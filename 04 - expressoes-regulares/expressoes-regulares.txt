@@ -1,0 +1,3 @@
+Expressões Regulares (ReGex): são usadas para processar texto apartir de padrões, por exemplo, você pode receber um CPF, você pode extrair somente os digitos para fazer validações ou separar os valores
+
+É bastante usado em Substituição de texto

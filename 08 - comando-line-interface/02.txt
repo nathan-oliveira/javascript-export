@@ -1,0 +1,20 @@
+## matar processos
+
+npm i -g fkill
+npm i -g fkill-cli
+
+fkill chrome
+
+## remover pastas como node_modules
+npm i -g npkill
+
+npkill
+
+## components pre-pronto
+terminal-kit
+blessed
+
+
+## oq que da para fazer com o nodejs
+github.com/sindresorthus/awesome-nodejs
+

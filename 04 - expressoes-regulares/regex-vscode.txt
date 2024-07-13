@@ -1,0 +1,45 @@
+regex101.com
+
+123.123.123-14
+321.123.345-20
+
+/^\d{3}.\d{3}.\d{3}-\d{2}$/gm
+
+// ^ => serve para pegar somente o inicio de cada linha
+// \d => pegar os digitos
+// {3} sequencia de digitos
+// $ => boa pratia sempre encerrar com ele, pois, vai falar que encerra na linha evitando processamento desnecessário
+
+// pegar somente os caracteres especiais
+/[.-]/gm
+
+================================================================================================
+
+Nathan, Oliveira
+Fulano, Ciclano
+
+// \w => pegar cada letra sepada
+// \w+ => pegar a letra até que tenha caracter especial
+// \s => pegar o espaço
+// \S => não pegar espaço
+// (...) => (\w+) => valores que ter tirar (são chamados de grupo e são acessar através do $, $1, $2)
+
+// transformar texto acima em json
+replace: /^(\w+),\s(\w+)$/gm
+por: { firstName: "$1", lastName: "$2" }
+
+================================================================================================
+
+O [Nathan] [https://google.com] clique no azul
+
+// \[(.*?)\] tudo que estiver dentro de [...]
+
+// transformar em link html
+replace: /\[(.*?)\]\(([http|https].*?)\)/gm
+por: <a href="$2">$1</a>
+
+================================================================================================
+
+// esse regex abaixo vai ficar rodando em loop e quebra tudo!
+time \
+  node --eval "/^([a-z|A-Z|0-9]+\s?)+$/.test(eaeee') && console.log('ae')"

@@ -1,0 +1,13 @@
+{
+  "name": "03.test-data-builder-object-mother",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "chai": "^5.1.1",
+    "mocha": "^10.4.0"
+  },
+  "scripts": {
+    "test": "npx mocha -w test/*.test.js"
+  }
+}

@@ -1,0 +1,7 @@
+// simular memory leak
+
+const items = []
+
+while (true) items.push(items)
+
+// node --max-old-space-size=64

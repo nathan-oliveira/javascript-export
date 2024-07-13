@@ -1,0 +1,8 @@
+call stack: é uma pilha de operações onde é armazenada sequencia de ações onde vai executar linha por linha, algo como um callback que chama outro callback que chama outro callback de forma ordenada...
+memory heap: é o lugar onde são armazenados os endereços de memoria que podem ser apontados pelo call stack para trabalhar os valores de variaveis funções, objetos, arrays e etc
+
+diferença entre os dois de armazenamento é que o call stack guarda dados de tipo de valor primitivos, enquanto memory heap guarda dados de tipo de referencia que podem crescer dinamicamente
+
+resumo:
+*call stack é a pilha de execução de funções
+*memory heap é a pilha de memoria para guardar os dados do tipo de referencia

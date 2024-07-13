@@ -1,0 +1,17 @@
+04 - coercao_de_tipos_&_objects_lifecycle_toString_valueOf_e_SymbolToPrimitive
+
+
+coercao de tipos/conversão de tipos é conceito usando para explicar comportamentos na linguagem
+é um processo de conversão de um valor para outro tipo, como converter uma string para um number ou uma expressão para um boolean.
+
+so podem ser convertidos em três formas (string | number | boolean)
+
+
+coercao implicita: é aquela usada com operadores, quando somamos uma string com números, comos fazemos um if em uma variavel que não é booleana...
+  quando usamos:
+    loose equality operator ou ==
+  ao invés do:
+    strict equality operator ou ===
+
+
+coecao explicita (para fazer uma conversão explicita chama a função)

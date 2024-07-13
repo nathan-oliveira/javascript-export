@@ -1,0 +1,79 @@
+publicar pacote npm no github
+
+github.com/features/packages
+
+github.com
+
+1º clique na foto de perfil
+2º Configurações (Settings)
+3º Developer Settings
+4º Personal access tokens
+5º Generate new token (botão)
+6º Colocar permissões
+  - repo
+  - write:packages
+  - delete:packages
+7º Generate token (botão)
+8º Copiar token
+9º Criar repository
+10° no packages.json do projeto adicionar
+  {
+    ...packages.json
+    "repository": {
+      "type": "git",
+      "url": "a mesma url que clona o projeto via https"
+    },
+    "publishConfig": {
+      "registry": "https://npm.pkg.github.com"
+    }
+  }
+11º Login
+  npm login --registry "https://npm.pkg.github.com"
+    username: username
+    password: é a chave (TOKEN que foi gerado)
+    email: email
+  npm publish --registry "https://npm.pkg.github.com" 
+12º No repository procurar por "Publish your first package" (packages) 
+    github.com/username/repository/packages
+
+se tiver o publishConfig é só "npm publish"
+
+
+
+Se tiver mantendo em dois pacotes em lugares diferentes.
+  npm i npmrc -g
+
+  npmrc -c work
+  npmrc work
+  npm config set registry https://npm.pkg.github.com
+  cat ~/.npmrcs/work
+
+  npmrc -c opensource
+  npmrc opensource
+  npm config set registry https://registry.npmjs.org
+
+  // se for usar esse remover "publishConfig"
+  npm login --scope=@username --registry=https://npm.pkg.github.com
+
+  npm publish
+
+
+
+
+
+
+
+
+Verdaccio
+  npm i verdaccio -g
+
+  1º rodar em um terminal o comando "verdaccio" e acessar a url
+  2º pegar a publish
+
+  npmrc -c local-registry
+  npm config set registry=http://localhost:4873
+  npm adduser
+  npm publish
+
+
+

@@ -1,0 +1,31 @@
+semantic versioning: resolve problemas de dependency hell e falta de controle sobre atualizações dos pacotes
+
+Major.Minor.Path
+
+- MAIJOR/RENJOR (Major) => NOVA VERSÃO DE SOFTWARE
+- MAINER (Minor) => FEATURE, NOVA FUNCIONALIDADE
+- PATCH (Path) => ALTERAÇÃO DE BUG NO SISTEMA
+
+npm ci --silent
+
+npm version path
+
+npm outdated
+
+"^1.0.0" => "^" pegar o primeiro que tiver o valor que não é zero do Path ele vai usar (2.0.0 -> 2.0.1)
+"~1.0.0" => "~" pegar igual é menor do Minor
+">1.0.0" => ">" pegar igual é maior do Major
+"<2.0.0" => "<" pegar igual é menor do Major
+
+">1.0.0 <2.0.0"
+
+npm update
+
+
+
+procurar:
+npx lockfile-lint --path yarn.lock --type yarn --validate-https --allowed-hosts
+
+npx lockfile-lint --path yarn.lock --validate-https
+
+

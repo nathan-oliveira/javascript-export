@@ -1,0 +1,11 @@
+{
+  "name": "02.abstract-factory",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "server": "node ui/index.mjs",
+    "web": "npx http-server ."
+  }
+}

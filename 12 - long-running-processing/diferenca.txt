@@ -1,0 +1,8 @@
+
+Child Process
+processo é igual um programa em sua máquina mas não compartilha memoria, conexão, mas pode gerar sub processos e um processo pode ter varios threads
+
+Worker threads:
+threads é usada para rodar um processo igual segundo plano. compartilha memoria, processo
+
+

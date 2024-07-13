@@ -1,0 +1,1 @@
+Observer -> você não me chama, eu chama vc, é uma lista de atores que notifica os contexto via eventos.

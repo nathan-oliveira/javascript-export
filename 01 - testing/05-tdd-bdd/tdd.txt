@@ -1,0 +1,1 @@
+Test Driven Development, e trata-se de uma prática de desenvolvimento de software onde a codificação das funcionalidades começa a partir da escrita de testes unitários. Essa técnica foi criada por Kent Beck e é um dos pilares do XP (Extreme Programming)

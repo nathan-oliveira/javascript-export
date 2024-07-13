@@ -1,0 +1,1 @@
+Stubs serve para maperar a saida de uma API sem precisar de internet ou serviço terceiro, focando no output e processamento logico do codigo.

@@ -1,0 +1,29 @@
+"Enquanto estamos falando, 10 novos frameworks JavaScript foram lançados"
+
+Ele instala as versões do package-lock
+$ npm ci
+
+  1º Acessar: npmjs.com
+  2º Criar Conta
+  3º Clique na Foto de Perfil e ver o nome do usuário para colocar no pacote "@nathan/fluentsql"
+  4º cd fluentsql-jest-tdd-yt
+  5º npm login
+  6º npm publish --access=public
+  7º npm i @nathan/fluentsql
+
+  * npm version  atualiza a versão do package (1.2.0 = MAINGER.MAINER.PATCH)
+    - MAIJOR (Major) => NOVA VERSÃO DE SOFTWARE
+    - MAINER (Minor) => FEATURE, NOVA FUNCIONALIDADE
+    - PATCH (Path) => ALTERAÇÃO DE BUG NO SISTEMA
+
+  8º npm version patch
+  9º rm -rf .git
+  10º npm publish
+
+  11º npm version major
+  12º npm publish
+
+
+para saber quando precisa realizar uma atualização, vai ver oq tem de versão dos pacote
+$ npm outdated
+$ npm update

@@ -1,0 +1,6 @@
+Object x Map (...)
+
+Map: O tipo Map é uma espeficicação Object e pode ser em cenários expecificos (traz funções para validar se uma chave existe e remover um item que não prejudique o ciclo de vida do javascript, implementa o Padrão Generator)
+WeakMap:
+// revolve problema no paradgima na orientação objetos
+

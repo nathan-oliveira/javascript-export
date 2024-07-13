@@ -1,0 +1,5 @@
+Symbol: Symbol (símbolo) é um tipo primitivo que armazena um valor único. Seu propósito é esse, servir como um identificador único.
+SymbolToPrimitive: Para interceptar a conversão de objeto e espeficar como a conversão deve ser realizada
+SymbolToStringTag
+SymbolIterator
+SymbolAsyncIterator

@@ -1,0 +1,5 @@
+'use strict';
+
+é uma ferramenta para sinalizar potenciais problemas em uma aplicação.
+o strict mode elimina alguns erros silenciosos do JavaScript fazendo-os lançar exceções. Segundo, o strict mode evita equívocos que dificultam que motores JavaScript realizem otimizações: código strict mode pode às vezes ser feito para executar mais rápido que código idêntico não-strict mode.
+

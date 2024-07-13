@@ -1,0 +1,5 @@
+Padrão Fluent API => O Objetivo do Fluent API é execcutar tarefas como um pipeline, step by step
+e no fim, chama o build. Muito similar ao padrão Builder, a diferença que Fluent API é sobre processos, o Builder sobre construção de objetos
+
+
+Padrão Fluent API => É um padrão de projeto estruturado com o objetivo de abstrair as execuções complexas de outras classes

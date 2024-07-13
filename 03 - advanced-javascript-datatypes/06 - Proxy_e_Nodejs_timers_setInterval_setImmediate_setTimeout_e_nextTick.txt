@@ -1,0 +1,2 @@
+Proxy faz a mesma coisa que o observable
+Nodejs_timers_setInterval_setImmediate_setTimeout_e_nextTick

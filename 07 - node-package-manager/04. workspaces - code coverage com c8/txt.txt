@@ -1,0 +1,28 @@
+Yarn workspaces
+NPM workspaces
+
+Faz os seus pacotes ser gerenciados somente de um so lugar como o Monorepo, criar e publicar pacotes e nova versões.
+Pode gerenciados todos os pacotes de um so lugar, publicar de forma independente e ainda garantir que os pacotes priorize o codigo local ao inves do codigo do npm registry
+
+npm init -y
+npm i -D nodemon -w string-util
+npm i -D c8 --workspaces
+npm test -w string-util
+npm run test:cov -w string-util
+npm run test:dev --workspaces string-util
+
+npm init -w date-util -y --scope @nathan
+npm i -D nodemon -w date-util
+npm i -D c8 --workspaces
+npm run test:dev --workspaces date-util
+
+npm i @nathan/string-util -w date-util
+
+
+npmrc -c verdaccio
+npm config set registry=http://localhost:4873
+npm addUser
+npm publish --workspaces | npm publish -w date-util
+
+tirar tudo do ar
+npm unpubish -f --workspaces

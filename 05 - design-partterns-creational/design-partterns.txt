@@ -1,0 +1,76 @@
+Padrão de Projetos
+  Dry (Dont't Repeat yourself): Pensou em criar o mesmo codigo duas vezes, crie uma função que utilize o mesmo comportamento e já mais tenha codigo duplicado para não precisar dar manutenção em dois lugares diferentes
+  Kiss (Keep It Simple Stupid): Pensar no codigo mais simples possivel para que outras pessoas podem dar manutenção sem precisar ficar decifrando misterio
+  Yagni (You Aren't Gonna Need It): Fazer e entender o que preciso ser feito, não fazer algo a mais achando que vai ser util pois pode ser apenas para algo simples
+
+Clean Code: Tem um unico objetivo, especificar uma convenção entre desenvolvedores (livro criado por Robert C Martin)
+
+Principios de SOLID (Fácil de manter e entender)
+  S -> Single Responsibility (Principio da responsabilidade unica) o modulo deve ter uma e uma razão para mudar, quando detectar uma classe que faz mais que seu proposito signfica que as suas responsabilidades devem ser revista e dividade em novas classes
+  O -> Open Closed (Principio Aberto/Fechado) entidades de sistemas devem ser abertas para extenção e fechadas para modificação (basicamente preciso fazer uma nova implementação em uma entidade existente, essa nova codificação deve ser criada sem que altere o que já funciona no sistema)
+  L -> Liskov's Substitution (Principio de substituiação de Liskov), as classes filhas podem herdar o comportamento da classe Base e
+  I -> Interfacce Segregation (Segregação de interfaces), as interfaces em linguagens que tem suporte completo da programação orientada objeto são contratos que dizer o que uma classe deve ter (em javascript não temos interfaces explicitas), o cliente não deve ser forçado a depender de uma classe que eles não usam (deve dividir as interfaces em contextos, varias interface, uma de escrita e de leitura)
+  D -> Dependency Inversion, dependencias de nossas classes deve depender de abstrações ao invés de implementações (isso signfica que não deve saber qualquer detalhe de implementação das dependencias e se souber está violando esse principio)
+
+
+exemple Interfacce Segregation
+```
+interface IWrite {
+  create(item)
+  update(filter, item, upsert)
+  delete(item)
+}
+
+interface IRead {
+  read(quer, project: {}, skip: number, limit: number): []
+}
+
+class Users implements IRead {
+  read(quer, project: {}, skip: number, limit: number) {
+    return []
+  }
+}
+
+class Files implements IWrite, IRead {
+  create(item) {}
+  update(filter, item, upsert) {}
+  delete(item) {}
+  read(quer, project: {}, skip: number, limit: number) {}
+}
+```
+
+
+
+Factory Design Pattern serve para extrair a complexidade da criação de um objeto e evitar a replicação de dependencias
+(a ideia do Factory é criar um lugar centralizado onde as dependencias são importadas e por fim expoe apenas o que o cliente final vai precisar usar)
+  - ConnectionFactory usanda para criar diversas conexão de banco de dados mantendo as assinaturas de metodo de classes
+
+```
+const defaultFactory = () => ({
+  carService: new CarService({ cars: './../database/cars.json' })
+})
+```
+
+Arquitetura N-Camadas (N-Tier ou N-Layers) é usada para dividir responsabilidades da arquitetura de um sistema (em camadas) (ex: exposição de instâncias, regras de negócios, acesso a dados)
+  - Repository Pattern é um padrão de acesso a dados que prega que todo e qualquer acesso ao banco de dados de um dominio especifico deve ser feita por uma classe expeficifica de acordo com o seu contexto,
+   preciso fazer um select ao banco, esse select sai da camada de acesso a dados e so ela tem permissão de manipular o banco de dados só que a responsabilidade dela é apenas o acesso a dados, uma vez que adicionou regras de negocio na camada Repository não está seguindo o padrão
+  - Service/Busines (para regra de negócio): Responsavel por mapear os dados fazer calculos e tomar decisões, e para que possa acesar o banco de dados
+  - Dependency Injection (Injeção de dependencias)
+
+Factory_Design_Pattern_N-Tier_Architecture_Dependency_Injection_Creational_Patterns
+  - ajuda em dependencias, organização de codigo e criar um codigo testavel (serve para paradigmas de programação)
+
+Padrão Builder Fluent Interface (FluentAPI) é desenhado para chamar as funções method chaining
+  FluentAPI (da para executar tarefas como o pipeline), Builder FluentAPI é usado para criar objetos complexos sobre demanda e suas funções podem ser chamadas independete da ordem
+  Facade Pattern é um padrão estrutural
+  site: refactoring.guru
+
+Test Data Builder da uma flexibilidade melhor para criar objetos e pode alterar os parametros do metodo e criar codigo legivel do acontecimento
+
+Padrão Object Mother é um agregador que abstrai as complexidades do objetos
+  (tem que ter cuidado para não violar os principios de responsabilidade unica do solid se adicionar caso de testes que não faz sentido com o contexto)
+
+
+Diferença de um Pattern e anti-pattern: Em engenharia de software Design Pattern é uma solução geral e reutilizavel para resolver um problema recorrente, ele é uma descrição/template de como resolver um problema que pode ser usado em diversas situações
+  Design Patterns são boas praticas em que programadores podem usar para solucionar problemas
+  anti-pattern respostas que até resolvem problemas mas não são eficaz que podem trazer mais ricos do que beneficios (Over engineering)

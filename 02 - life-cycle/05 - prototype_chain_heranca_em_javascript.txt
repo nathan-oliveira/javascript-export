@@ -1,0 +1,17 @@
+Internamente tudo no javascript é um objeto
+
+Herança de objetos é a habilidade de acessar métodos e propriedades de outro objeto pai apartir do objeto derivado
+
+em javascript a herança é realizada através do prototype (chamada de herança de prototipo)
+
+
+SOLID
+S -> Single Responsibility
+O -> Open Closed
+L -> Liskov's Substitution
+I -> Interfacce Segregation
+D -> Dependency Inversion
+
+
+Uma vez que é criar uma classe derivada ela não deve quebrar as funcionalidades existente do sistema que é o principio de Substituição de Liskov (Liskov's Substitution Principle)
+OpenClosed (onde as entidades do sistema como classes deve ser abertas para extenção mas fechadas para modificações)

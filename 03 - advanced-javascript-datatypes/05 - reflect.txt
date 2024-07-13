@@ -1,0 +1,1 @@
+Reflect resolve problemas de semantica do javascript, impede que algo malicio altere funcionalidades padrão do javascript

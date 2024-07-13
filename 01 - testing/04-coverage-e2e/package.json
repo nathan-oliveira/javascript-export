@@ -1,0 +1,15 @@
+{
+  "name": "04-coverage-e2e",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "test": "npx mocha --parallel *.test.js",
+    "test:cov": "npx nyc npx mocha --parallel *.test.js"
+  },
+  "devDependencies": {
+    "mocha": "^10.4.0",
+    "nyc": "^15.1.0",
+    "supertest": "^7.0.0"
+  }
+}

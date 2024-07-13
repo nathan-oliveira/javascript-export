@@ -1,0 +1,6 @@
+docker ps
+
+docker run -p "8080:80" -d nginx
+docker ps
+docker logs 8823342aca34
+docker rm -f 8823342aca34

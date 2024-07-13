@@ -1,0 +1,9 @@
+Javascript Universal: ele Descreve a aplicação que roda tanto no cliente quando no servidor com o mesmo codigo, podendo ser reutilizadas em multiplataformas
+
+tem o objetivo de extrair a geração de objetos complexos
+
+Abstract Factory é uma extenção do Factory, usando para criar interfaces dinamicas,
+ ele é padrão criacional que nos deixa produzier familidas de objetos relacionados 
+ sem especificar as classes contretas em outras palavras essas familias de objetos 
+ são componentes que não fazem sentido existir juntas com outras familia de objetos
+

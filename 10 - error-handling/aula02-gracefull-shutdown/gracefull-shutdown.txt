@@ -1,0 +1,2 @@
+Gracefull shutdown
+Técnica para escalar aplicaçõees Node.js sem complicação
